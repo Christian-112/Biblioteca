@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    width: 100%;
+}
+h2{
+    font-size: 2rem;
+    color: rgb(9, 1, 125);
+    padding: 2% 0 5% 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    min-height: 100vh;
+}
+.contenedor-form-tab{
+    display: flex;
+    width: 1100px;
+    height: 85%;
+}
+.con-formulario{
+    border: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 40%;
+}
+.formulario{
+    display: grid;
+    justify-content: center;
+}
+.formulario h3{
+    padding: 4% 0;
+    font-size: 1.5rem;
+    width: 400px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.formulario label{
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+.formulario input{
+    padding: 2% 5%;
+}
+button{
+    width: 75%;
+    background-color: rgb(0, 200, 0);
+    border: none;
+    margin: 5% auto 0 auto;
+    padding: 2% 5%;
+}
+.con-tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid black;
+}
+.tabla{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.tabla .con-titulo-tabla{
+    font-size: 1.5rem;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0 0;
+}
+.tabla .con-titulo-tabla h3{
+    padding: 2% 2% 20% 2%;
+}
+table{
+    text-align: center;
+    width: 100%;
+}
+.tabla table th, td{
+    border-bottom: 1px solid black;
+}
+.tabla table th{
+    background-color: rgb(235, 235, 235);
+}
+.tabla table td{
+    padding: 5% 0;
+}
+.tabla .estado{
+    color: rgb(0, 200, 0);
+}
+@media(max-width:768px){
+    body{
+        display: grid;
+    }
+    .contenedor-form-tab{
+        display: grid;
+        width: 700px;
+        height: 100%;
+    }
+    .con-formulario{
+        width: 100%;
+    }
+    .con-tabla{
+        width: 100%;
+        height: 550px;
+    }
+}
+@media(max-width:468px){
+    .contenedor-form-tab{
+        width: 350px;
+    }
+    .con-tabla{
+        width: 100%;
+    }
+    .con-formulario{
+        width: 100%;
+    }
+    .formulario form{
+    width: 350px;
+}
+}
