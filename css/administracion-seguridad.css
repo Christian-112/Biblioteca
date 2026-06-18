@@ -85,7 +85,7 @@ body{
 }
  
 }
-
+ 
 /* Estilos para celular */
 @media(max-width: 380px) {
     .tabla {
@@ -98,9 +98,6 @@ body{
     border-bottom: 3px solid  rgb(192, 185, 185);
     }
 
-    body{
-    display: grid;
-}
 }
   
 
