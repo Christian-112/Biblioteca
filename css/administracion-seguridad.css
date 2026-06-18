@@ -99,5 +99,15 @@ body{
     }
 
 }
+@media(max-width:768px){
+    body{
+        display: grid;
+    }
+}
+@media(max-width:468px){
+    body{
+        display: grid;
+    }
+}
   
 
