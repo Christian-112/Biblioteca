@@ -11,10 +11,93 @@
 <body>
     <header class="contenedor-navegacion">
         <nav class="nav">
-            <div class="con-icon">
+            <div class="con-logo">
                 <img src="icon/open-book.png" alt="">
+                <h1 class="titulo-principal"><span class="titulo-icono">Biblioteca Escolar</span><br>EL SABER</h1>
+            </div>
+            <div class="con-iconos-lista">
+                <ul>
+                    <a href="inicio.html"><li><img src="icon/home.png" alt="">Inicio</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/group.png" alt="">Estudiantes</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/user.png" alt="">Docente</li></a>
+                    <a href="gestion-libros.html"><li><img src="icon/agenda.png" alt="">Libros</li></a>
+                    <a href="prestamos.html"><li><img src="icon/signing.png" alt="">Préstamos</li></a>
+                    <a href="devoluciones.html"><li><img src="icon/commercial.png" alt="">Devoluciones</li></a>
+                    <a href="reportes.html"><li><img src="icon/administrator.png" alt="">Reportes</li></a>
+                    <a href="administracion-seguridad.html"><li><img src="icon/logout.png" alt="">Administración</li></a>
+                </ul>
             </div>
         </nav>
     </header>
+
+    <!-- inicio de la seccion -->
+    <section id="seccion">
+        <h2>Devoluciones de Libros</h1>
+        <div class="contenedor-form-tab">
+            <div class="con-formulario">
+            <div class="formulario">
+                <h3>Registrar Devolución</h3>
+                <form action="#">
+                    <label for="">Buscar préstamo</label>
+                    <input type="search" placeholder="PRE-000">
+                    <label for="">Usuario</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="">Libro</label>
+                    <input type="text" placeholder="libro">
+                    <label for="">Fecha de devolución real</label>
+                    <input type="date" placeholder="DD/MM/AAAA">
+                    <label for="">Estado</label>
+                    <input type="text" placeholder="Devuelto">
+                    <button>Registrar Devolución</button>
+                </form>
+            </div>
+            </div>
+            <div class="con-tabla">
+                <div class="tabla">
+                    <div class="con-titulo-tabla">
+                    <h3>Devoluciones Recientes</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <!-- fila principal -->
+                            <tr>
+                                <th>ID</th>
+                                <th>Usuario</th>
+                                <th>Libro</th>
+                                <th>F.Devolución</th>
+                                <th>Estado</th>
+                            </tr>
+                            </thead>
+                        <tbody>
+                            <!-- fila 2 -->
+                            <tr>
+                                <td>DEV-001</td>
+                                <td>Annahy Raxón</td>
+                                <td>El principito</td>
+                                <td>10/05/2026</td>
+                                <td class="estado">Devuelto</td>
+                            </tr>
+                            <!-- fila 3 -->
+                            <tr>
+                                <td>DEV-002</td>
+                                <td>Aracely Siney</td>
+                                <td>Cien años de soledad</td>
+                                <td>15/05/2026</td>
+                                <td class="estado">Devuelto</td>
+                            </tr>
+                            <!-- fila 4 -->
+                            <tr>
+                                <td>DEV-003</td>
+                                <td>Neftalí Suruy</td>
+                                <td>La casa de los espíritus</td>
+                                <td>20/05/2026</td>
+                                <td class="estado">Devuelto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
