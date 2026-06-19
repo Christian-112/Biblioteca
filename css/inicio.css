@@ -1,0 +1,219 @@
+*{
+margin: 0;
+padding: 0;
+} 
+
+
+
+body{
+    display:flex;
+  background-color: aliceblue;
+} 
+
+
+
+.cajon-principal{
+    display: grid;
+    gap: 20px;
+    flex-wrap: wrap;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center; 
+          margin: 30px auto;
+
+}
+
+
+.cajon,.cajon2,.cajon3,.cajon4{
+    width: 220px;
+    height: 180px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+  }
+    .contenedor .contenedor-tarjetas img{
+    height: 75%;
+    width: 100%;
+    align-items: center;
+    border-radius: 15px;
+} 
+
+.material-symbols-outlined{
+    font-size: 25vh;
+    margin-bottom: 10vh;
+}
+
+.tituls{
+    font-size: 35px;
+    margin: 5px 0; 
+    color: rgb(9, 1, 125);
+}
+
+.tit{
+    font-size: 18px;
+    margin: 0; 
+   color: rgb(9, 1, 125);} 
+
+   .cajon5{
+    grid-column: span 2;
+    grid-row: span 2;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; 
+background-image: url(../icon/GRAFICO.jpg);  
+ background-repeat: no-repeat; 
+ background-size: contain;
+    height:50vh;
+}
+
+
+.cajon6{
+    width: 50vh;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box; 
+      grid-column: 3 / 5;
+    height: 350px;
+}
+
+.cajon6 h2{
+    color: rgb(9, 1, 125);
+    margin-bottom: 20px;
+}
+
+.prestamo{
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.prestamo h3{
+    color: rgb(9, 1, 125);
+    margin-bottom: 5px;
+}
+
+.prestamo p{
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.prestamo span{
+    color: #777;
+    font-size: 14px;
+}
+
+.cajon6 a{
+     margin: 30px auto;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+@media(max-width: 768px){
+  body{
+    display: grid;
+  }
+}
+@media(max-width: 468px){
+  body{
+    display: grid;
+  }
+} 
+
+/* ===== TABLET ===== */
+@media (max-width: 768px){
+
+    .cajon-principal{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .cajon,
+    .cajon2,
+    .cajon3,
+    .cajon4{
+        width: 200px;
+        height: 170px;
+    }
+
+    .cajon5{
+        grid-column: span 2;
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+
+    .cajon6{
+        grid-column: span 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .material-symbols-outlined{
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px){
+
+    .cajon-principal{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 15px auto;
+    }
+
+    .cajon,
+    .cajon2,
+    .cajon3,
+    .cajon4{
+        width: 90%;
+        height: 160px;
+        margin: auto;
+    }
+
+    .cajon5{
+        grid-column: span 1;
+        width: 90%;
+        height: 250px;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cajon6{
+        grid-column: span 1;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .material-symbols-outlined{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .tituls{
+        font-size: 28px;
+    }
+
+    .tit{
+        font-size: 16px;
+    }
+}
