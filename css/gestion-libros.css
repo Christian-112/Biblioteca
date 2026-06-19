@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+/* el cuadro grande */
+.contenedor{
+    width: 100%;
+    min-height: none;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 15px gray;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* el botón */
+button{
+    background: #003399;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* buscar */
+.buscar{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+}
+ /* empezar la tabla */
+ table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ th, td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+ }
+
+ th{
+    background: #617fbb;
+    color: white;
+ }
+
+ h2{
+    color: rgb(9, 1, 125);
+    font-size: 50px;
+ }
+ 
+@media(max-width: 678px){
+    .encabezado{
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .buscar{
+        width: 100%;
+    }
+
+    table{
+        font-size: 14px;
+    }
+
+    th, td{
+        padding: 8px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:768px){
+    .contenedor{
+        margin-left: 0;
+        padding: 20px;
+    }
+    .encabezado{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .buscar{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    table{
+        font-size: 14px;
+    }
+    th, td{
+        padding: 10px;
+    }
+}
+
+/* para celular */
+@media (max-width:480px){
+
+    .contenedor{
+        width:100%;
+        padding:5px;
+        overflow-x:auto;
+    }
+
+    table{
+        width:100%;
+        font-size:9px;
+    }
+
+    th, td{
+        padding:3px;
+    }
+
+    h2{
+        font-size:18px;
+    }
+
+    .buscar{
+        width:100%;
+        margin-left:0;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(5),
+    td:nth-child(5){
+        display:none;
+    }
+
+}

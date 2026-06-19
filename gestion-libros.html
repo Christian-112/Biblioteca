@@ -11,10 +11,76 @@
 <body>
     <header class="contenedor-navegacion">
         <nav class="nav">
-            <div class="con-icon">
+            <div class="con-logo">
                 <img src="icon/open-book.png" alt="">
+                <h1 class="titulo-principal"><span class="titulo-icono">Biblioteca Escolar</span><br>EL SABER</h1>
+            </div>
+            <div class="con-iconos-lista">
+                <ul>
+                    <a href="inicio.html"><li><img src="icon/home.png" alt="">Inicio</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/group.png" alt="">Estudiantes</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/user.png" alt="">Docente</li></a>
+                    <a href="gestion-libros.html"><li><img src="icon/agenda.png" alt="">Libros</li></a>
+                    <a href="prestamos.html"><li><img src="icon/signing.png" alt="">Préstamos</li></a>
+                    <a href="devoluciones.html"><li><img src="icon/commercial.png" alt="">Devoluciones</li></a>
+                    <a href="reportes.html"><li><img src="icon/administrator.png" alt="">Reportes</li></a>
+                    <a href="administracion-seguridad.html"><li><img src="icon/logout.png" alt="">Administración</li></a>
+                </ul>
             </div>
         </nav>
     </header>
+        <div class="contenedor">
+        <div class="encabezado">
+            <h2>Gestion de Libros</h2>
+            <button>+ Libro</button>
+        </div>
+        <input type="text" placeholder="buscar Libro" class="buscar" >
+        <table>
+            <!-- inicio de tabla -->
+            <thead>
+                 <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <!-- primera columna -->
+                <tr>
+                    <td>LIB-001</td>
+                    <td>La casa de los espíritus</td>
+                    <td>Isabel Allende</td>
+                     <td class="Disponible">Disponible</td>
+                    <td>✏️🗑️</td>
+                </tr>
+                <!-- columna 2 -->
+                 <tr>
+                    <td>LIB-002</td>
+                    <td>Don Quijote de la Mancha</td>
+                    <td>Miguel de Cervantes</td>
+                    <td class="Prestado">Prestado</td>
+                    <td>✏️🗑️</td>
+                </tr>
+                <!-- columna 3 -->
+                 <tr>
+                    <td>LIB-003</td>
+                    <td>El Principito</td>
+                    <td>Antoine de Saint-Exupéry</td>
+                    <td class="Disponible">Disponible</td>
+                    <td>✏️🗑️</td>
+                </tr>
+                <!-- columna 4 -->
+                 <tr>
+                    <td>LIB-004</td>
+                    <td>Cien años de soledad</td>
+                    <td>Gabriel García Márquez</td>
+                     <td class="Disponible">Disponible</td>
+                    <td>✏️🗑️</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
