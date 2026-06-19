@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    width: 100%;
+}
+h2{
+    font-size: 2rem;
+    color: rgb(9, 1, 125);
+    padding: 2% 0 5% 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    min-height: 100vh;
+}
+.contenedor-info{
+    width: 1050px;
+    height: 85%;
+}
+.box-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    width: 100%;
+}
+.box-info img{
+    margin: 5% 10%;
+}
+.box-info .box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #1C4694;
+    background-color: #00A2FF;
+    color: #1C4694;
+}
+.box-info .box2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #00FF05;
+    border-radius: 10px;
+    background-color: #C8FFC1;
+    color: #00FF05;
+}
+.box-info .box3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #FFCBCB;
+    color: red;
+}
+.box-info .box4{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid purple;
+    border-radius: 10px;
+    background-color: #D2CBFF;
+    color: purple;
+}
+.box-grafica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    width: 100%;
+}
+.grafica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.grafica img{
+    width: 90%;
+    height: 90%;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.datos h3, .con-tablaa{
+    font-size: 1.5rem;
+}
+table{
+    height: 75%;
+}
+table, tr, td{
+    padding: 5%;
+}
+
+@media(max-width:768px){
+    body{
+        display: grid;
+    }
+    .contenedor-info{
+        display: grid;
+        width: 700px;
+        height: 100%;
+    }
+}
+@media(max-width:468px){
+    .contenedor-info{
+        width: 350px;
+        height: 350px;
+    }
+    .box-info img{
+        width: 32px;
+    }
+    .box-info{
+        font-size: 0.8rem;
+    }
+    .grafica{
+        height: 100%;
+    }
+    .datos{
+        height: 100%;
+    }
+    .datos h3, .con-tablaa{
+        font-size: 0.8rem;
+    }
+}
