@@ -87,10 +87,12 @@ body{
 }
  
 /* Estilos para celular */
-@media(max-width: 380px) {
+@media(max-width: 390px) {
     .tabla {
         table-layout: auto;
         font-size: 10px;
+        width: 50vw;
+        margin: 2%;
     }
     :is(th,td){
     border: none;
@@ -107,6 +109,10 @@ body{
 @media(max-width:468px){
     body{
         display: grid;
+    }
+    .tabla{
+        width: 80vw;
+        margin: 2%;
     }
 }
   

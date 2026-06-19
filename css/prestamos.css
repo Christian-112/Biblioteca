@@ -94,7 +94,7 @@ table{
     display: grid;
 }
 
-@media (max-width:480px){
+@media (max-width:468px){
 
     body{
         display: grid;
@@ -102,19 +102,19 @@ table{
     }
 
     .contenedor-padre{
+        width: 90vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     section{
-        margin-left: 80px;
         width: 100%;
     }
 
     .formulario,
     .contenedor{
-        width: 95%;
+        width: 85%;
         height: auto;
         margin-bottom: 20px;
     }
@@ -132,7 +132,7 @@ table{
 
     table{
         font-size: 0.8rem;
-        width: 100%;
+        width: 85%;
     }
 
     th, td{
@@ -140,7 +140,7 @@ table{
     }
 }
 
-@media (min-width:481px) and (max-width:768px){
+@media (min-width:468px) and (max-width:768px){
 
     body{
         display: grid;
