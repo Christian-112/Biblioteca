@@ -6,15 +6,101 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/administracion-seguridad.css">
+
     <title>El Saber</title>
 </head>
 <body>
     <header class="contenedor-navegacion">
         <nav class="nav">
-            <div class="con-icon">
+            <div class="con-logo">
                 <img src="icon/open-book.png" alt="">
+                <h1 class="titulo-principal"><span class="titulo-icono">Biblioteca Escolar</span><br>EL SABER</h1>
+            </div>
+            <div class="con-iconos-lista">
+                <ul>
+                    <a href="inicio.html"><li><img src="icon/home.png" alt="">Inicio</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/group.png" alt="">Estudiantes</li></a>
+                    <a href="gestion-estudiante.html"><li><img src="icon/user.png" alt="">Docente</li></a>
+                    <a href="gestion-libros.html"><li><img src="icon/agenda.png" alt="">Libros</li></a>
+                    <a href="prestamos.html"><li><img src="icon/signing.png" alt="">Préstamos</li></a>
+                    <a href="devoluciones.html"><li><img src="icon/commercial.png" alt="">Devoluciones</li></a>
+                    <a href="reportes.html"><li><img src="icon/administrator.png" alt="">Reportes</li></a>
+                    <a href="administracion-seguridad.html"><li><img src="icon/logout.png" alt="">Administración</li></a>
+                </ul>
             </div>
         </nav>
     </header>
+    <!-- fin de la barra nav -->
+    <section>
+        <!-- principio de la tabla -->
+        <table class="tabla">
+            <!--Principios de la fila 1 -->
+         <tr class="fila1">
+            <th colspan="3">Usuario del sistema</th>
+        
+            
+            <th>
+                <div class="contenedor">
+                    <button class="botton">+ Nuevo Usuario</button>
+                </div>
+            </th> 
+            <th></th>
+         </tr>
+           <!-- final de las filas -->
+            <tr class="fila2">
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Rol</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+            <!-- principio de las filas 3 -->
+             <tr class="fila3">
+                <td>USR-001</td>
+                <td>Admin</td>
+                <td>Administrador</td>
+                <td class="Activo">Activo</td>
+                <td>
+                <img src="icon/edit_24dp_255290_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="icon/delete_24dp_255290_FILL0_wght400_GRAD0_opsz24 (2).png" alt="">
+                </td>
+             </tr>
+
+              <tr class="fila3">
+                <td>USR-02</td>
+                <td>Bibliotecario</td>
+                <td>Bibliotecario</td>
+                <td class="Activo">Activo</td>
+                <td>
+                <img src="icon/edit_24dp_255290_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="icon/delete_24dp_255290_FILL0_wght400_GRAD0_opsz24 (2).png" alt="">
+                </td>
+             </tr>
+
+              <tr class="fila3">
+                <td>USR-003</td>
+                <td>Docente1</td>
+                <td>Docente</td>
+                <td class="Activo">Activo</td>
+                <td>
+                <img src="icon/edit_24dp_255290_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="icon/delete_24dp_255290_FILL0_wght400_GRAD0_opsz24 (2).png" alt="">
+                </td>
+             </tr>
+
+              <tr class="fila3">
+                <td>USR-004</td>
+                <td>Estudiante1</td>
+                <td>Estudiante</td>
+                <td class="Activo">Activo</td>
+                <td>
+                <img src="icon/edit_24dp_255290_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="icon/delete_24dp_255290_FILL0_wght400_GRAD0_opsz24 (2).png" alt="">
+                </td>
+             </tr>
+               <!-- final de las filas 3  -->
+        </table>
+        <!-- final de la tabla -->
+    </section>
 </body>
 </html>
